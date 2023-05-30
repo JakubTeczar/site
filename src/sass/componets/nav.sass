@@ -1,0 +1,42 @@
+nav
+    position: fixed
+    width: 100%
+    max-width: 165rem
+    display: flex
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 3
+    align-items: center
+    @include mq("small")
+        background: $mainColor
+        width: 100%   
+        height: 7.5rem 
+        padding-right: 5%
+        padding-left: 10%
+
+.nav__logo
+    display: none
+    @include mq("small")
+        display: inline-block
+        color: white
+        font-size: 3rem
+        text-transform: uppercase
+    @include mq("mobile")
+        font-size: 2.4rem
+
+.nav__contact
+    margin-left: auto
+    margin-right: 4vw
+    @include button(18rem,5.5rem,2.4rem)
+    background: rgba(0, 0, 0, 0.543)
+    border-bottom-left-radius: .5rem 
+    border-bottom-right-radius: .5rem 
+    @include mq("small")
+        background: $mainColor
+        height: 7rem 
+        margin: 0
+        margin-left: auto
+        font-size: 3rem
+    @include mq("mobile")
+        font-size: 2.4rem

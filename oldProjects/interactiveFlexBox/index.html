@@ -1,0 +1,67 @@
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="tytul">Sprawdz działanie flex boxa</div>
+        <div id="display">
+            <input type="checkbox" id="displayy">display : flex ;  
+        </div>
+        <div id="sterowanie">
+            <div id="aling-items">
+
+                <input type="radio" name="align"  id="alingStretch" >align-items: stretch; <br> 
+                <input type="radio" name="align"  id="alingFlexEnd" > align-items: flex-end; <br> 
+                <input type="radio" name="align"  id="alingFlexStart" >align-items: flex-start; <br> 
+                <input type="radio" name="align"  id="alingCenter" >align-items: center; <br> 
+                <input type="radio" name="direction"  id="alingRow" > flex-direction:row; <br> 
+                <input type="radio" name="direction"  id="alingColumn" > flex-direction: column; <br> 
+             
+            </div>
+            <div id="justify-content">
+
+                <input type="radio" name="justify"  id="justifyCenter" > justify-content:center; <br> 
+                <input type="radio" name="justify"  id="justifyFlexEnd" > justify-content:flex-end; <br> 
+                <input type="radio" name="justify"  id="justifyFlexStart" >justify-content:flex-start; <br> 
+                <input type="radio" name="justify"  id="justifySpaceBetween" >justify-content: space-between; <br> 
+                <input type="radio" name="justify"  id="justifySpaceAround" >justify-content:space-around ; <br> 
+
+            </div>
+            <div id="poszczegulne">
+                  Dotyczy wybranego diva →  
+                <input type="number" id="flex" placeholder="flex:" >
+                <input type="number" id="flexGrow" placeholder="flex-grow:" >
+                <input type="number" id="flexShrink" placeholder="flex-shrink:" >
+                <input type="number" id="order" placeholder="order:" >
+                <input type="text" id="alignSelf" placeholder="align-self: np flex-start ;" >
+            </div>
+            <div id="rozmiar">
+            <label>
+                <input type="radio" name="div" id="div1" checked>div1
+                <input type="radio" name="div" id="div2" >div2
+                <input type="radio" name="div" id="div3" >div3<br>
+            </label>
+                Szerokosc
+                <input type="range" id="szerokosc" min="0" max="400" step="10" value="200" >
+                Wysokosc
+                <input type="range" id="wysokosc" min="0" max="400" step="10" value="200">
+             
+            </div>
+        </div>
+
+        <br>
+        <div style="text-align: right;"><button></button>Automatyczne dopasowywanie sie do ekranu przez rodzica oraz zmiana wielkosci divów z px na flex (aby zobaczyć efekt flex-grow itd.)</div>
+        
+        <div id="sw" style="text-align: center; width: 1000px;color:gold;">szerokosc 700px wysokosc 500px</div>
+        <div id="pojemnik">
+            <div id="pierwszy">1</div>
+            <div id="drugi">2</div>
+            <div id="trzeci">3</div>
+        </div>
+
+
+    </body>
+</html>

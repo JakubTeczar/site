@@ -1,0 +1,51 @@
+{
+  "homepage": "http://JakubTeczar.github.io/site",
+  "name": "react-complete-guide",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.7.3",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "4.0.1",
+    "swiper": "^9.2.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "watch-css": "sass src/sass:src/css --watch",
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"npm run start\" \"npm run watch-css\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}

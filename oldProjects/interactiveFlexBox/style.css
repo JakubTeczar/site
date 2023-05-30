@@ -1,0 +1,102 @@
+html{
+    --czcionka:25px;
+    --szerokosc:80vw;
+}
+body{
+    background-color: rgb(60, 93, 122);
+    color: white;
+    margin: 0 auto;
+    width:var(--szerokosc);
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#tytul
+{
+    margin: 1%;
+    text-align: center;
+    font-size: calc(2*var(--czcionka));
+}
+#sterowanie
+{
+    display: flex;
+    margin: 0 auto;
+    height:calc(.15* var(--szerokosc));
+    width:calc(.9* var(--szerokosc));
+}
+#display{
+    background-color: brown;
+    width: calc(.3* var(--szerokosc));
+    margin: 0 auto;
+    text-align: center;
+    font-size: calc(1.2*var(--czcionka));
+    margin-bottom: calc(0.02* var(--szerokosc));
+    border-radius:0.5em;
+    transition: 0.3s;
+    
+}
+#display:hover{
+    filter: brightness(1.5);
+}
+#display > input{
+    width: 1.3rem;
+    height: 1.3rem;
+    
+}
+#aling-items{
+    
+    flex:1 ;
+}
+#justify-content{
+    
+    flex:1.3 ;
+
+}
+#poszczegulne{
+    
+    flex:1 ;
+    text-align: center;
+
+}
+#poszczegulne > input {
+    margin: .14em 2em;
+
+}
+#rozmiar{
+    
+    flex:1 ;
+
+}
+#pojemnik{
+    margin: calc(0.01* var(--szerokosc)) auto;
+    width: 700px;
+    display: block;
+    height: 500px;
+    background-color: rgb(69, 105, 138);
+    
+}
+#pierwszy{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    font-size: var(--czcionka);
+    text-align: center;
+}
+#drugi{
+    background-color: rgb(167, 60, 60);
+    width: 200px;
+    height: 200px;
+    font-size: var(--czcionka);
+    text-align: center;
+}
+#trzeci{
+    background-color: rgb(133, 179, 216);
+    width: 200px;
+    height: 200px;
+    font-size: var(--czcionka);
+    text-align: center;
+}
+button{
+    height: 1.2rem;
+    width: 3.4rem;
+    margin:0;
+    background-color:brown;
+}

@@ -1,0 +1,206 @@
+.odd-project
+    margin-top: 3em
+    margin-bottom: 3em
+    @include mq("medium")
+        padding-top: 4em
+    @include mq("small")
+        background: white !important
+.odd-project__view
+    order: 2
+.odd-project__descriptionSide
+    order: 1
+    &::after
+        display: none
+    &::before
+        content: ""
+        position: absolute
+        right: 0 
+        top: 10vh
+        height: 85vh
+        width: 26%
+        max-height: 80rem
+        background: $mainColor
+        @include mq("medium")
+            display: none
+    &::after
+        content: ""
+        position: absolute
+        top: 10%
+        left: 10%
+        width: 26%
+        height: 90%
+        background: $mainColor
+    @include mq("medium")
+        background: $mainColor
+ 
+.project
+    font-family: 'Raleway', sans-serif
+    display: flex
+    max-height: 85rem
+    @include mq("medium")
+        flex-direction: column
+        margin: 0 auto
+        width: 100%
+        height: 80rem
+    @include mq("small")
+        width: 100%
+        background: $mainColor
+        height: min-content
+        padding-top: 3em
+        padding-bottom: 5em
+        display: flex
+        justify-content: center
+        
+    
+        
+
+    &__view
+        background: $mainColor
+        width: 55%
+        height: 85vh
+        max-height: 80rem
+        margin-top: 10vh
+        position: relative
+        // clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%)
+        @include mq("medium")
+            display: none
+            visibility: hidden
+            flex: 0
+        .zjadbyco-img
+            background-image: url('../../img/zjadbyco.PNG')
+        .calednar-img
+            background-image: url('../../img/calendar.PNG')
+        &--img
+            width: 85%
+            height: 60%
+            max-height: 45rem
+            background-image: url('../../img/prodix.PNG')
+            background-size: contain
+            background-repeat: no-repeat
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            &::after
+                position: absolute
+                content: ""
+                width: 108%
+                height: 1.2rem
+                background: $accent
+                bottom: 0
+                transform: translateX(-4%) translateY(-50%)
+                // position: absolute
+    &__descriptionSide
+        width: 55%
+        height: 100%
+        position: relative
+  
+        &::after
+            content: ""
+            position: absolute
+            top: 10vh
+            left: 0
+            width: 26%
+            height: 85vh
+            max-height: 80rem
+            background: $mainColor
+            @include mq("medium")
+                display: none
+        @include mq("medium")
+            // background: red
+            max-width: 80rem
+            margin: 0 auto
+            width: 100%
+        @include mq("small")
+            height: auto
+            flex: 1
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            align-items: center
+            background: transparent
+
+    &__description
+        // letter-spacing: 1px
+        line-height: 1.2
+        width: 80%
+        max-width: 64rem
+        height: 80%
+        max-height: 55rem
+        border: 2rem solid $accent
+        background: white
+        position: absolute
+        top: calc(47% + 10vh)
+        left: 50%
+        transform-origin: left
+        transform: translateX(-50%) translateY(-50%)
+        // animation: name duration timing-function delay iteration-count direction fill-mode
+        z-index: 1
+        padding: 4em 3em
+        display: flex
+        flex-direction: column   
+        @include mq("big")
+            padding-top: 2.5em
+        @include mq("medium")
+            top: 50%
+        @include mq("small")
+            height: auto
+            margin-top: 0
+            padding: 2em 3em
+            max-height: min-content
+            position: static
+            transform: none
+        @include mq("mobile")
+            padding: 2em 1.6em
+            text-align: justify
+        &--top-panel
+            font-size: 3rem
+            text-transform: uppercase
+            font-weight: bold
+            margin-bottom: 1.3em
+            display: flex
+            @include mq("big")
+                display: block
+                margin-bottom: 1em
+        &--name
+            @include mq("big")
+                line-height: 1.5
+                text-align: center
+                margin-bottom: .2em
+
+        &--text
+            font-size: 2rem
+            margin-bottom: auto
+            line-height: 2.5rem
+        &--icons
+            height: 3.5rem
+            width: 100%
+            display: flex
+            align-items: center
+            padding-left: 1.3em
+            // justify-content: center
+            div
+                width: 5rem
+                height: 5rem
+                background-size: contain
+            @include mq("big")
+                justify-content: center
+                padding-left: 0em
+           
+        &--button
+            @include button(30rem,5rem,2rem)
+            margin: 0 auto
+            border-radius: .2em
+            text-decoration: none
+            justify-content: center
+            align-items: center
+            display: flex
+            @include mq("medium")
+                @include button(30rem,auto,1.8rem)
+                padding: .5em 0
+            @include mq("small")
+                max-width: 23rem
+                font-size: 1.6rem
+                margin: .5em auto
+                margin-top: 3em
+

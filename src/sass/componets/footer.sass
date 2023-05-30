@@ -1,0 +1,118 @@
+.copy-rights
+    background: $accent
+    text-align: center
+    color: white
+    padding: .5em 0
+    font-style: italic
+footer
+ 
+    position: relative
+    &::after 
+        content: ""
+        position: absolute
+        top: -4em
+        left: 5%
+        width: 3px
+        height: calc(100% + 2em)
+        background: $mainColor
+    &::before
+        content: ""
+        position: absolute
+        top: -4em
+        right: 5%
+        width: 3px
+        height: calc(100% + 2em)
+        background: $mainColor
+
+.footer
+    &__box
+        width: 80%
+        margin: 2em auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 30rem
+        @include mq("mobile")
+            width: 90%
+        // position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            height: 3px
+            width: 100%
+            background: $mainColor
+        &::after
+            content: ""
+            position: absolute
+            bottom: 6.5rem
+            left: 0
+            height: 3px
+            width: 100%
+            background: $mainColor
+    &__quote
+        padding-bottom: 2em
+        text-align: center
+        font-style: italic
+        font-weight: 300
+        font-family: 'Raleway', sans-serif
+        letter-spacing: 1px
+        font-size: 2rem
+        @include mq("medium")
+            font-size: 1.7rem
+        @include mq("small")
+            font-size: 1.5rem
+            padding: 0 2em
+            padding-bottom: 2em
+        .br
+            display: block
+            @include mq("small")
+                display: inline
+        @include mq("mobile")
+            font-size: 1.8rem
+
+    &__bottom-panel
+        border-top: 3px solid $mainColor
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        // width: 35rem
+        padding-top: 1em
+        justify-content: center
+        align-items: center
+        gap: 2em
+
+        @include mq("small")
+            width: auto
+            // background: red
+            grid-template-columns: repeat(2,1fr)
+            gap: .5em
+            grid-column-gap: 2em
+        &--phone
+            @include mq("small")
+                grid-area: 2/1
+                grid-column: span 2
+        &--git
+            gap: .5em
+        li
+            list-style-type: none
+            display: flex
+            align-items: center
+            justify-content: center
+            a
+                display: flex
+                align-items: center
+                text-decoration: none
+                color: black
+                &:hover
+                    color: $mainColor
+        &--text
+            font-size: 2rem
+            letter-spacing: -1px
+        &--icon
+            width: 4rem
+            height: 4rem
+        
+
+

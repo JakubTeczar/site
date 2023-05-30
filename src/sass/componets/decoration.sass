@@ -1,0 +1,145 @@
+.fullCircle
+    position: absolute
+    width: 22rem
+    height: 22rem
+    background: $accent
+    border-radius: 50%
+    top: 73rem
+    transform: translateY(-50%)
+    right: calc( 28% + 20rem )
+    animation: fadeIn .5s 13s backwards
+    @include mq("large")
+        top: 55rem
+        width: 15rem
+        height: 15rem
+    @include mq("big")
+        width: 12rem
+        height: 12rem
+    @include mq("small")
+        display: none
+.fast-fadeIn
+    animation: none !important
+    opacity: 100%
+.emptyCircle
+    position: absolute
+    width: 40rem
+    height: 40rem
+    border-radius: 50%
+    border: solid $accent 5rem
+    top: 100%
+    left: calc( 50% - 70.1rem )
+    transform: translateY(-50%) translateX(-50%)
+    z-index: 1
+    animation: fadeIn 1s 13.2s backwards
+    background: white
+    @include mq("large")
+        left: 4rem
+        transform: translateY(-50%) 
+        width: 33rem
+        height: 33rem
+    @include mq("big")
+        left: 0rem
+        width: 28rem
+        height: 28rem
+        border: solid $accent 4rem
+    @include mq("small")
+        display: none
+
+.skip__btn
+    position: absolute
+    bottom: 5%
+    right: 5%
+    background: transparent
+    color: white    
+    border: 0
+    font-size: 2.4rem
+    &:hover
+        text-decoration: underline
+        cursor: pointer
+
+.backdrop-animation
+    animation: move .7s ease 12.4s forwards
+
+.backdrop-skip-animation
+    display: none
+.backdrop
+    // display: none
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background: $mainColor
+    z-index: 3
+    // animation: move .7s ease 12.4s forwards
+    @include mq("small")
+        display: none !important
+svg
+    position: absolute
+    display: inline-block
+    height: 100%
+    top: 24%
+    right: 50.4rem
+    transform: translateX(-29.5%)
+    z-index: 1
+    @include mq("small")
+        display: none
+@keyframes move 
+    0%
+        width: 100%
+    70%
+        opacity: 1
+    100%
+        width: 0%
+        opacity: 0
+
+.decoration
+    background: $mainColor
+    color: white
+    font-size: 5rem
+    text-align: center
+    padding-top: 1.5em
+    position: relative
+    border-top-left-radius: .5em
+    border-top-right-radius: .5em
+    display: none
+    @include mq("small")
+        display: block
+    &__text
+        margin-top: .5em    
+        @include mq("mobile")
+        font-size: 4rem
+    &__elements
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 4rem
+        grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr))
+        grid-template-rows: 1fr
+        overflow: hidden
+        justify-content: center
+        gap: 10px
+        padding: 0 4rem
+        padding-right: 2rem
+        display: none
+        li
+            list-style-type: none
+            width: 4rem
+            height: 4rem
+            background: white
+        @include mq("small")
+            display: grid
+
+.odd-decoration
+    border-radius: 0
+    border-bottom-left-radius: .5em
+    border-bottom-right-radius: .5em
+    padding:0
+    height: 4rem
+
+@keyframes fadeIn 
+    0%
+        opacity: 0%
+    100%
+        opacity: 100%

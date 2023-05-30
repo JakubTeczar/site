@@ -1,0 +1,148 @@
+.console-animation
+    display: block !important
+    animation:  reSize .4s forwards , fadeOut .1s forwards 12s
+.console
+    display: none
+    // opacity: 1
+    position: absolute
+    background: black
+    width: 90rem
+    height: 0rem
+    height: 45rem
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+    z-index: 4
+    user-select: none
+    // animation:  reSize .4s forwards , fadeOut .1s forwards 12s
+    // animation-delay: 12s
+    overflow: hidden
+    @include mq("small")
+        display: none
+    &__bar
+        background: $gray
+        padding: .4em .6em
+        color: $whiteConsol
+        display: flex
+        &--buttons
+            margin-left: auto
+            display: flex
+            align-items: center
+            div
+                width: 2.2rem
+                height: 1.2rem
+                &:not(:last-child)
+                    margin-right: 1em
+
+        &--hideBtn
+            position: relative 
+            &::before
+                @include absolute(50%,50%,true)
+                width: 80%
+                height: 2px
+                background: $whiteConsol
+        &--closeBtn
+            position: relative 
+            .closeBtn__line
+                @include absolute(50%,50%,false)
+                width: 80%
+                height: 2px
+                background: $whiteConsol
+                &:nth-child(1)
+                    transform: translateX(-50%) translateY(-50%) rotate(-45deg)
+                &:nth-child(2)
+                    transform: translateX(-50%) translateY(-50%) rotate(45deg)
+                    
+        &--fullSizeBtn
+            height: 1.4rem
+            border: 2px solid $whiteConsol
+
+    &__text
+        color: white
+        padding: 1em
+        font-size: 1.8rem
+        line-height: 1.1
+        &--green
+            color: $greenConsol
+        div
+            display: inline-block
+            position: relative 
+            &::after
+                box-sizing: border-box
+                content: ""
+                position: absolute
+                width: 100%
+                height: 110%
+                background-color: black
+                top: 0
+                right: 0
+                border:0px solid white
+            //Animcaja pisanie w konsoli
+    &__text-animation
+        .line1::after
+            animation: typing .1s steps(1) forwards 
+            animation-delay: 1s
+        .line2::after
+            animation: cursor  linear .8s, typing .8s steps(15) forwards 
+            animation-delay: 1.6s
+        .line3::after
+            animation: typing .1s steps(1) forwards 
+            animation-delay: 2.5s
+        .line4::after
+            animation: cursor  linear .8s, typing .8s steps(15) forwards 
+            animation-delay: 3s
+        .line5::after
+            animation: cursor  linear 1.8s, typing 1.8s steps(43) forwards 
+            animation-delay: 3.9s
+        .line6::after
+            animation: cursor  linear 2s, typing 2s steps(45) forwards 
+            animation-delay: 5.7s
+        .line7::after
+            animation: cursor  linear 2.2s, typing 2.2s steps(45) forwards 
+            animation-delay: 8s
+        .line8::after
+            animation: cursor  linear .5s, typing .5s steps(4) forwards 
+            animation-delay: 10.5s
+        span
+            width: 5rem
+            display: inline-block
+    
+
+@keyframes typing 
+    to 
+        width: 0
+    
+@keyframes cursor 
+    0% 
+        border-left:3px solid white
+        border-color: white
+    
+    50% 
+        border-color: white
+    
+    65% 
+        border-color: transparent
+    
+    75% 
+        border-color: transparent
+    
+    90% 
+        border-color: white
+    
+    100% 
+        border-color: white
+        border-left:3px solid white
+
+@keyframes fadeOut 
+    from 
+        height: 45rem
+    to 
+        height: 0rem
+        opacity: 0
+  
+@keyframes reSize 
+    from 
+        height: 0rem
+    to 
+        height: 45rem
+  
