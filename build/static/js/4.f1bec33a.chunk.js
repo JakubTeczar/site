@@ -1,2 +1,0 @@
-(this.webpackJsonpJakubTeczar=this.webpackJsonpJakubTeczar||[]).push([[4],{43:function(a,c,e){"use strict";e.r(c),c.default=e.p+"static/media/calendar.91219a66.PNG"}}]);
-//# sourceMappingURL=4.f1bec33a.chunk.js.map

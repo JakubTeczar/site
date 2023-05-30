@@ -18,7 +18,7 @@ const Home = (props) => {
     return () => {
       resizeObserver.disconnect();
     };
-  }, [purplePart,props.diplay,props.adjust]);
+  }, [purplePart,props]);
 
   return (
     <section className='home'>
