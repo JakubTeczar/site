@@ -17,6 +17,7 @@ const Prodix = ({odd}) => {
                       <div className='html-icon'></div>
                       <div className='sass-icon'></div>
                       <div className='php-icon'></div>
+                      <div className='mysql-icon'></div>
                   </div>
                 </div>
                 <div className='project__description--text'>

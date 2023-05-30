@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Zjadbyco = ({odd}) => {
  
@@ -24,7 +25,7 @@ const Zjadbyco = ({odd}) => {
                     Stronę współtworzyłem z <a href='https://github.com/nerfi58' target='black'>nerfi</a> który zają się backendem strony.
                 </div>
                 
-                <button className='project__description--button'>Przejdź do projektu</button>
+                <Link to="/zjadbyco" target='blanck' className='project__description--button'>Przejdź do projektu</Link>
             </div>
         </div>
     </section>

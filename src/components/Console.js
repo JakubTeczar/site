@@ -26,9 +26,9 @@ const Console = ({consoleClass, textClass}) => {
           <div className='console__text--green line3'>C: \Users\Kuba\portfolio></div> 
           <div className='console__text--normal line4'>echo Witam ^</div> <br/>
 
-          <span></span><div className='console__text--normal line5'>Jestem studentem na kierunku informatyka ^</div>  <br/>
-          <span></span><div className='console__text--normal line6'>stosowana. Interesuje się tworzeniem stron ^</div> <br/>
-          <span></span><div className='console__text--normal line7'>internetowych oraz wszystkim co jest z tym związane. {'>>'} cv.txt</div> <br/>
+          <span></span><div className='console__text--normal line5'>Jestem studentem na kierunku informatyka stosowana.^</div>  <br/>
+          <span></span><div className='console__text--normal line6'> Interesuje się tworzeniem stron internetowych ^</div> <br/>
+          <span></span><div className='console__text--normal line7'>oraz wszystkim co jest z tym związane. {'>>'} cv.txt</div> <br/>
           <span></span><div className='console__text--normal line8'>exit</div> <br/>
         </div>
         <div className='console__skip-btn'>Pomiń</div>

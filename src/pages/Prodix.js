@@ -102,15 +102,16 @@ function Prodix() {
         <div className="project-side">
             <div className="project-side__title">Prodix</div>
             <div className="project-side__links">
-                <a href="1" className="project-side__links--a">
+                <a href="http://jakubteczar.j.pl/prodix/" target='blank' className="project-side__links--a">
                     <div className="project-side__links--icon"></div>
                     Strona projektu
                 </a>
-                <a href="1" className="project-side__links--a">
+                <a href="https://github.com/JakubTeczar/prodix.git" target='blank' className="project-side__links--a">
                     <div className="project-side__links--icon git-icon"></div>
                     Pliki źródłowe
                 </a>
             </div>
+            <i>//Przykładowe konto Login1234, Haslo1234</i>
             {/* <Link to="/home">dsa</Link> */}
             <div className="project-side__box">
             {isLoading && <div className="project-side__loader--wrapper">

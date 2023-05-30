@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-complete-guide"]=this["webpackJsonpreact-complete-guide"]||[]).push([[8],{39:function(e,t,c){"use strict";c.r(t),t.default=c.p+"static/media/creatingExercise.0188fac1.PNG"}}]);
+//# sourceMappingURL=8.ef7853c9.chunk.js.map

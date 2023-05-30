@@ -56,10 +56,10 @@ function Main (){
         setTimeout(()=>{
           document.querySelector("body").style.overflow = "auto";
           SetAdjustLine(2);
-        },13000)
+        },18000)
         setTimeout(()=>{
           document.querySelector(".skip__btn").style.diplay = "none";
-        },12000)
+        },17000)
 
       }
     
@@ -84,10 +84,10 @@ function Main (){
       <React.Fragment>
         <nav>
           <div className='nav__logo'>Jakub Tęczar</div>
-          <button className='nav__contact' onClick={()=>{ document.querySelector("footer").scrollIntoView({ behavior: 'smooth' });}}>Kontak</button>
+          <button className='nav__contact' onClick={()=>{ document.querySelector("footer").scrollIntoView({ behavior: 'smooth' });}}>Kontakt</button>
         </nav>
         <div className='backdrop' ref={backdropRef}>
-            <button className='skip__btn' onClick={()=>skipAnimation()}>Pomiń animacje</button>
+            <button className='skip__btn' onClick={()=>skipAnimation()}>Przejdź dalej</button>
         </div>
         <svg className='home__line' style={stylePosition} viewBox="0 0 616.737 1238.487" preserveAspectRatio='xMidYMax meet'>
           <path ref={path} id="Path_1" data-name="Path 1" d="M-671,1322.655s480.565-41.549,428.629,297.77-315.083,333.549-450.118,394.719-205.439,143.115-121.186,541.3" transform="translate(852.659 -1318.47)" fill="none" stroke="#f4b393" strokeWidth="5"/>

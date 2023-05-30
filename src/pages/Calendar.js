@@ -88,15 +88,16 @@ function Calendar() {
         <div className="project-side">
             <div className="project-side__title">Kalendarz</div>
                 <div className="project-side__links">
-                    <a href="1" className="project-side__links--a">
+                    <a  href="http://jakubteczar.j.pl/calendar/" target='blank' className="project-side__links--a">
                         <div className="project-side__links--icon"></div>
                         Strona projektu
                     </a>
-                    <a href="1" className="project-side__links--a">
+                    <a href="https://github.com/JakubTeczar/calendar.git" target='blank' className="project-side__links--a">
                         <div className="project-side__links--icon git-icon"></div>
                         Pliki źródłowe
                     </a>
                 </div>
+                <i>//Przykładowe konto Login1234, Haslo1234</i>
                 {/* <div className="project-side__about">Jest to mój starszy projekt , który, choć posiada kilka niedoskonałości, przyczynił się do mojego znaczącego 
                     rozwoju. */}
                 {/* </div> */}

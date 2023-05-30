@@ -192,7 +192,7 @@ nav {
   top: 73rem;
   transform: translateY(-50%);
   right: calc(28% + 20rem);
-  animation: fadeIn 0.5s 13s backwards;
+  animation: fadeIn 0.5s 18.3s backwards;
 }
 @media (max-width: 110em) {
   .fullCircle {
@@ -228,7 +228,7 @@ nav {
   left: calc(50% - 70.1rem);
   transform: translateY(-50%) translateX(-50%);
   z-index: 1;
-  animation: fadeIn 1s 13.2s backwards;
+  animation: fadeIn 1s 18.5s backwards;
   background: white;
 }
 @media (max-width: 110em) {
@@ -268,7 +268,7 @@ nav {
 }
 
 .backdrop-animation {
-  animation: move 0.7s ease 12.4s forwards;
+  animation: move 0.7s ease 17.4s forwards;
 }
 
 .backdrop-skip-animation {
@@ -382,7 +382,7 @@ svg {
 }
 .console-animation {
   display: block !important;
-  animation: reSize 0.4s forwards, fadeOut 0.1s forwards 12s;
+  animation: reSize 0.4s forwards, fadeOut 0.1s forwards 17s;
 }
 
 .console {
@@ -970,8 +970,13 @@ footer::before {
   width: 108%;
   height: 1.2rem;
   background: #F4B393;
-  bottom: 0;
+  bottom: 2px;
   transform: translateX(-4%) translateY(-50%);
+}
+@media (max-width: 1500px) {
+  .project__view--img::after {
+    display: none;
+  }
 }
 .project__descriptionSide {
   width: 55%;
@@ -1276,6 +1281,7 @@ footer::before {
   padding: 0.3em 1em;
   border-radius: 0.2em;
   margin-bottom: 1.5em;
+  width: 100%;
 }
 .other-projects__box .element__button:hover {
   cursor: pointer;
@@ -1351,6 +1357,14 @@ footer::before {
   font-size: 2.6rem;
   font-style: italic;
   gap: 1em;
+}
+@media (max-width: 25em) {
+  .project-side__links {
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 0.3em;
+    margin-bottom: 0.6em;
+  }
 }
 .project-side__links--a {
   text-decoration: none;
@@ -1572,6 +1586,52 @@ footer::before {
     opacity: 0;
   }
 }
+.zjadbyco-side__back-drop {
+  background: rgba(2, 2, 0, 0.301);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.zjadbyco-side__back-drop:hover {
+  cursor: pointer;
+}
+.zjadbyco-side__back-drop--box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: white;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 3em 3em;
+  font-size: 2.2rem;
+  max-width: 70rem;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+.zjadbyco-side__back-drop--box:hover {
+  cursor: default;
+}
+.zjadbyco-side__back-drop--box hr {
+  margin-top: 2em;
+}
+.zjadbyco-side__back-drop--box a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+.zjadbyco-side__back-drop--box a:first-child {
+  margin-top: 2em;
+}
+.zjadbyco-side__back-drop--box a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .zjadbyco-side h5 {
   display: inline;
   font-size: 2rem;
@@ -1582,23 +1642,22 @@ footer::before {
   color: rgb(197, 197, 195);
   cursor: pointer;
 }
-.zjadbyco-side .project-side__description {
-  line-height: 1.2;
-  font-size: 1.7rem;
+.zjadbyco-side .project-side__links--a:hover {
+  cursor: pointer;
 }
-.zjadbyco-side .project-side__description span {
+.zjadbyco-side .project-side span {
   font-size: 2.2rem;
   font-weight: 700;
   font-style: italic;
   display: block;
   margin-top: 0.5em;
 }
-.zjadbyco-side .project-side__description b {
+.zjadbyco-side .project-side b {
   font-size: 2.8rem;
   font-weight: 700;
   display: block;
 }
-.zjadbyco-side .project-side__description h4 {
+.zjadbyco-side .project-side h4 {
   font-size: 2.4rem;
 }
 .zjadbyco-side .project-side__description--list {

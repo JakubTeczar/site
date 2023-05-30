@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense, useRef} from "react";
-import helloImg from "../img/zjadbyco/hello.PNG";
+import helloImg from "../img/zjadbyco/hello.png";
 
 function Zjadbyco() {
     const [isLoading, setIsLoading] = useState(true);
@@ -19,19 +19,19 @@ function Zjadbyco() {
         img.onerror = () => setIsLoading(false);
 
         // Lazy load other images
-        import("../img/zjadbyco/calendar.PNG").then((module) => {
+        import("../img/zjadbyco/calendar.png").then((module) => {
             setCalednarImg(module.default);
         });
-        import("../img/zjadbyco/fridge.PNG").then((module) => {
+        import("../img/zjadbyco/fridge.png").then((module) => {
             setFridgeImg(module.default);
         });
-        import("../img/zjadbyco/shopping.PNG").then((module) => {
+        import("../img/zjadbyco/shopping.png").then((module) => {
             setShoppingImg(module.default);
         });
-        import("../img/zjadbyco/settings.PNG").then((module) => {
+        import("../img/zjadbyco/settings.png").then((module) => {
             setSettingsImg(module.default);
         });
-        import("../img/zjadbyco/configuration.PNG").then((module) => {
+        import("../img/zjadbyco/configuration.png").then((module) => {
             setConfigImg(module.default);
         });
 
@@ -47,6 +47,7 @@ function Zjadbyco() {
     const homeRef = useRef();
     const list = useRef();
     const img = useRef();
+    const backDrop = useRef();
     const calendarRef = useRef();
     const fridgeRef = useRef();
     const settingsRef = useRef();
@@ -74,6 +75,13 @@ function Zjadbyco() {
             pointer.current.style.left = x;
         }
     }
+    const dispalyBackDrop = (display)=>{
+        if(display){
+            backDrop.current.style.display = "block";
+        }else{
+            backDrop.current.style.display = "none";
+        }
+    }
     return(
         <>
         <Suspense >
@@ -91,15 +99,24 @@ function Zjadbyco() {
         <Suspense >
             <img src={configImg} alt=""  style={{ display: "none" }} />
         </Suspense>
-
+        <div className="zjadbyco-side__back-drop" ref={backDrop} onClick={() =>dispalyBackDrop(false)}>
+            <div className="zjadbyco-side__back-drop--box"> 
+                Aktualnie trawają pracę nad systemem logwania , w tym momęcie można sprawdzić funkcjonalość aplikacji bez zmiany konta.
+                <hr></hr>
+                <a href="https://jakubteczar.github.io/Zjadbyco/" target='blank'> Część główna </a>
+                <a href="https://jakubteczar.github.io/Zjadbyco/#/hello" target='blank'> Część konfiguracyna </a>
+                <a href="https://jakubteczar.github.io/Zjadbyco/#/authentication/login" target='blank'> Część logowania </a>
+            </div>
+        </div>
         <div className="project-side zjadbyco-side">
             <div className="project-side__title">Zjadbyco</div>
                 <div className="project-side__links">
-                    <a href="1" className="project-side__links--a">
-                        <div className="project-side__links--icon"></div>
+      
+                    <div className="project-side__links--a" onClick={() =>dispalyBackDrop(true)}>
+                        <div className="project-side__links--icon" ></div>
                         Strona projektu
-                    </a>
-                    <a href="1" className="project-side__links--a">
+                    </div>
+                    <a href="https://github.com/JakubTeczar/Zjadbyco.git" target='blank' className="project-side__links--a">
                         <div className="project-side__links--icon git-icon"></div>
                         Pliki źródłowe
                     </a>

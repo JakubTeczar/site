@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Calendar = ({odd}) => {
  
   return (
@@ -15,8 +15,8 @@ const Calendar = ({odd}) => {
                     <div className='js-icon'></div>
                     <div className='html-icon'></div>
                     <div className='sass-icon'></div>
-                    <div className='mysql-icon'></div>
                     <div className='php-icon'></div>
+                    <div className='mysql-icon'></div>
                   </div>
                   
                 </div>
@@ -27,7 +27,7 @@ const Calendar = ({odd}) => {
                   <br/><br/>
        
                 </div>
-                <button className='project__description--button'>Przejdź do projektu</button>
+                <Link to="/calendar"  className='project__description--button'>Przejdź do projektu</Link>
             </div>
         </div>
     </section>
