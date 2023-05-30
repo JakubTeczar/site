@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Console from './Console';
 
 // import Expenses from './components/Expenses/Expenses';
@@ -8,8 +8,10 @@ const Home = (props) => {
   
  
   const purplePart = useRef(null);
+  const[display , setDisplay] = useState(props.diplay);
 
   useEffect(() => {
+    setDisplay(props.diplay);
     const resizeObserver = new ResizeObserver(entries => props.setPosition(entries[0].target.offsetLeft));
     resizeObserver.observe(purplePart.current);
     if (purplePart.current) {
@@ -32,8 +34,8 @@ const Home = (props) => {
             </div>
             <button className='home__contents--buttton' onClick={props.moveToProjectF}>Moje Projekty</button>
         </div>
-        <div className={props.diplay ? 'emptyCircle fast-fadeIn' : 'emptyCircle'} ></div>
-        <div className={props.diplay ? 'fullCircle fast-fadeIn' : 'fullCircle'} ></div>
+        <div className={display ? 'emptyCircle fast-fadeIn' : 'emptyCircle'} ></div>
+        <div className={display ? 'fullCircle fast-fadeIn' : 'fullCircle'} ></div>
         <div className='line'></div>
         <div className='home__purplePart' ref={purplePart}></div>
     </section>
