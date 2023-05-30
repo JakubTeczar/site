@@ -1,2 +1,0 @@
-(this["webpackJsonpreact-complete-guide"]=this["webpackJsonpreact-complete-guide"]||[]).push([[15],{46:function(e,t,c){"use strict";c.r(t),t.default=c.p+"static/media/fridge.0e4eb4c7.PNG"}}]);
-//# sourceMappingURL=15.7084395a.chunk.js.map
