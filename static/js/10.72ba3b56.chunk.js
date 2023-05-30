@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-complete-guide"]=this["webpackJsonpreact-complete-guide"]||[]).push([[10],{38:function(e,t,c){"use strict";c.r(t),t.default=c.p+"static/media/creatingSet.870be068.PNG"}}]);
+//# sourceMappingURL=10.72ba3b56.chunk.js.map
