@@ -74,7 +74,8 @@ function Main (){
       setConsoleClass("console");
       setTextClass("console__text");
       document.querySelector("body").style.overflow = "auto";
-      setDiplayCircle(true)
+      document.querySelector(".emptyCircle").classList.add("fast-fadeIn");
+      document.querySelector(".fullCircle").classList.add("fast-fadeIn");
     }
     const moveToProject = () =>{
       document.querySelector(".project").scrollIntoView({ behavior: 'smooth' });
@@ -93,7 +94,7 @@ function Main (){
           <path ref={path} id="Path_1" data-name="Path 1" d="M-671,1322.655s480.565-41.549,428.629,297.77-315.083,333.549-450.118,394.719-205.439,143.115-121.186,541.3" transform="translate(852.659 -1318.47)" fill="none" stroke="#f4b393" strokeWidth="5"/>
         </svg>
         
-        <Home setPosition={setRightPosition} diplay={diplayCircle} adjust={adjustLine} moveToProjectF={()=>{moveToProject()}}></Home>
+        <Home setPosition={setRightPosition} adjust={adjustLine} moveToProjectF={()=>{moveToProject()}}></Home>
         <Console consoleClass={consoleClass} textClass={textClass}></Console>
           <div className='decoration'>
             <div className='decoration__text'>MOJE PROJEKTY</div>

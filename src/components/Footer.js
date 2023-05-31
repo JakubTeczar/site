@@ -1,5 +1,6 @@
 import phone from "../img/telephone.png";
 import pin from "../img/location.png";
+import document from "../img/document.png";
 import githubIcon from "../img/blackGithub.png";
 
 function Footer(){
@@ -7,8 +8,9 @@ function Footer(){
         <footer >
             <div className="footer__box">
                 <div className="footer__quote">
-                    Zawsze interesowało mnie tworzenie kreatywnych i ciekawych rzeczy <div className="br"></div>
-                    które moją sens </div>
+                    Możliwość rozwoju i zdobywanie nowych umiejętności<div className="br"></div>
+                    jest dla mnie bardzo ważne.
+                </div>
                 <div className="footer__bottom-panel">
                     <li className="footer__bottom-panel--phone">
                         <img className="footer__bottom-panel--icon"  alt="telephone" src={phone} />
@@ -21,8 +23,10 @@ function Footer(){
                         </a>
                     </li>
                     <li>
-                        <img className="footer__bottom-panel--icon" alt="pin" src={pin}/>
-                        <div className="footer__bottom-panel--text">Kraków</div>
+                        <a href="http://jakubteczar.j.pl/CV.pdf" className="footer__bottom-panel--git" target="_blank" rel="noreferrer">
+                            <img className="footer__bottom-panel--icon" alt="pin" src={document}/>
+                            <div className="footer__bottom-panel--text">CV</div>
+                        </a>
                     </li>
                 </div>
             </div>
