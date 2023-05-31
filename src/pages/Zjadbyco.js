@@ -82,6 +82,8 @@ function Zjadbyco() {
             backDrop.current.style.display = "none";
         }
     }
+    const date = new Date();
+    const currentDate = date.getFullYear().toString() +"-"+(date.getMonth() + 1).toString().padStart(2, '0')+"-"+date.getDate().toString().padStart(2, '0');
     return(
         <>
         <Suspense >
@@ -101,9 +103,10 @@ function Zjadbyco() {
         </Suspense>
         <div className="zjadbyco-side__back-drop" ref={backDrop} onClick={() =>dispalyBackDrop(false)}>
             <div className="zjadbyco-side__back-drop--box"> 
-                Aktualnie trawają pracę nad systemem logwania , w tym momęcie można sprawdzić funkcjonalość aplikacji bez zmiany konta.
+                Aktualnie trawają pracę nad systemem logwania , 
+                w tym momęcie można sprawdzić funkcjonalość aplikacji bez zmiany konta.
                 <hr></hr>
-                <a href="https://jakubteczar.github.io/Zjadbyco/" target='blank'> Część główna </a>
+                <a href={`https://jakubteczar.github.io/Zjadbyco/#/calendar/${currentDate}`} target='blank'> Część główna </a>
                 <a href="https://jakubteczar.github.io/Zjadbyco/#/hello" target='blank'> Część konfiguracyna </a>
                 <a href="https://jakubteczar.github.io/Zjadbyco/#/authentication/login" target='blank'> Część logowania </a>
             </div>

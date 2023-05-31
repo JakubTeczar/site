@@ -1,2 +1,0 @@
-(this.webpackJsonpjakubteczar=this.webpackJsonpjakubteczar||[]).push([[14],{49:function(t,a,c){"use strict";c.r(a),a.default=c.p+"static/media/configuration.85c79103.png"}}]);
-//# sourceMappingURL=14.3f4e0727.chunk.js.map
