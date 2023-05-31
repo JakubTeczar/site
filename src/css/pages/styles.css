@@ -215,7 +215,7 @@ nav {
 
 .fast-fadeIn {
   animation: none !important;
-  opacity: 100%;
+  opacity: 1 !important;
 }
 
 .emptyCircle {
@@ -377,7 +377,7 @@ svg {
     opacity: 0%;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 .console-animation {
