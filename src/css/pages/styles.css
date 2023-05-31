@@ -1085,6 +1085,11 @@ footer::before {
   margin-bottom: auto;
   line-height: 2.5rem;
 }
+.project__description--text span {
+  display: block;
+  font-style: italic;
+  color: rgb(9, 108, 10);
+}
 .project__description--icons {
   height: 3.5rem;
   width: 100%;

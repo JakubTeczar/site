@@ -21,9 +21,9 @@ const Calendar = ({odd}) => {
                   
                 </div>
                 <div className='project__description--text'>
-                  Za pomocą tej strony można planować zadania i cele na wybrane dni , 
-                  sprawdzać statystki wykonanych zadań a także dodawać najbardziej przydatne linki tak aby mieć je pod ręką.
-                  W wolnym czasie można również zagrać w grę matematyczną dostępną na stronie.
+                  Za pomocą tej strony można planować zadania i cele na wybrane dni, 
+                  sprawdzać statystki wykonanych zadań, a także dodawać najbardziej przydatne linki tak aby mieć je pod ręką.
+                  W wolnym czasie można również zagrać w grę matematyczną.
                   <br/><br/>
        
                 </div>

@@ -20,9 +20,10 @@ const Zjadbyco = ({odd}) => {
                 </div>
                 <div className='project__description--text'>
                     Za pomocą tej strony będziesz mógł w łatwy sposób zaplanować posiłki na kolejne dni 
-                    oraz automatycznie na tej podstawie wygenerować listę zakupów.<br/>
+                    oraz automatycznie wygenerować listę zakupów.<br/>
                     <br/>
-                    Stronę współtworzyłem z <a href='https://github.com/nerfi58' target='black'>nerfi</a> który zają się backendem strony.
+                    Stronę współtworzyłem z <a href='https://github.com/nerfi58' target='black'>nerfi</a>, który zajął się back-endem strony.
+                    <span>//Dostępna jest wersja mobilna</span>
                 </div>
                 
                 <Link to="/zjadbyco" target='blanck' className='project__description--button'>Przejdź do projektu</Link>

@@ -21,9 +21,10 @@ const Prodix = ({odd}) => {
                   </div>
                 </div>
                 <div className='project__description--text'>
-                  Jest to strona która umożliwa tworzenie spersonalizowanych planów treningowych oraz śledzenie postępów na siłowni.
+                  Jest to strona, która umożliwa tworzenie spersonalizowanych planów treningowych oraz śledzenie postępów na siłowni.
                   <br/><br/>
-                  Dodatkowo, zapewnia łatwy dostęp do planu treningowego oraz pozwala na zapisywanie swojej aktywności w kalendarzu.
+                  Dodatkowo zapewnia łatwy dostęp do planu treningowego oraz pozwala na zapisywanie swojej aktywności w kalendarzu.
+                  <span>//Dostępna jest wersja mobilna</span>
                 <br/>
        
                 </div>
