@@ -8,7 +8,7 @@ function Footer(){
         <footer >
             <div className="footer__box">
                 <div className="footer__quote">
-                    Bardzo ważna jest dla mnie możliwość rozwoju<div className="br"></div>
+                    Bardzo ważna jest dla mnie możliwość rozwoju <div className="br"></div>
                     i zdobywania nowych umiejętności.
                 </div>
                 <div className="footer__bottom-panel">

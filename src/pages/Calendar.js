@@ -120,7 +120,7 @@ function Calendar() {
                             <div className="project-side__list--title">Pulpit strony</div>
                                 <div className="project-side__list--text">
                                     <div className="paragraph"><h4 onMouseEnter={()=>setPointer("96%","25%","3%" , "25%")}>-Plan lekcji</h4> tutaj wyświetlane są wszystkie zajęcia
-                                    i przewy w podanym dniu a obecna lekcja jest zaznaczona markerem.
+                                    i przerwy w podanym dniu a obecna lekcja jest zaznaczona markerem.
                                     </div>
                                     <div className="paragraph"><h4 onMouseEnter={()=>setPointer("96%","20%","3%","40%")} >-Szybkie informacje</h4> w tym miejscu dowiesz się
                                         za ile będzie kolejna lekcja lub kiedy kończy się przerwa.
@@ -130,7 +130,7 @@ function Calendar() {
                         <div className="project-side__list" ref={calendarRef} onClick={()=>activeElement(calendarRef.current ,calednarImg)}>
                             <div className="project-side__list--title">Planer i statystki</div>
                                 <div className="project-side__list--text">
-                                    <div className="paragraph"><h4 onMouseEnter={()=> activeElement(calendarRef.current,calednarImg)}>-Kalendarz</h4> za jego pomocą możesz dodać zadania które chcesz wykonać w wybrane dni miesiące i zapisać je
+                                    <div className="paragraph"><h4 onMouseEnter={()=> activeElement(calendarRef.current,calednarImg)}>-Kalendarz</h4> za jego pomocą możesz dodać zadania które chcesz wykonać w wybrane dni miesiąca i zapisać je
                                         na serwerze.
                                     </div>
                                     <div className="paragraph"><h4 onMouseEnter={()=> activeElement(calendarRef.current,statImg)}>-Statystki</h4> tutaj sprawdzisz ile zadań i celów wykonałeś , masz wykonać albo które się przedawniły.

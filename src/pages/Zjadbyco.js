@@ -142,7 +142,7 @@ function Zjadbyco() {
             }
                 <div className="project-side__description">
                     <b>Zamysł korzystania z aplikacji</b>
-                    Na początku użytkownik <h5 onClick={()=>activeElement(undefined,configImg)}>konfiguruje konto</h5> wpisując swoje zapotrzebowanie kalorczyne oraz wybierając pulę produktów i dań z których będzie korzystał podczas użytkania  aplikacji.
+                    Na początku użytkownik <h5 onClick={()=>activeElement(undefined,configImg)}>konfiguruje konto</h5> wpisując swoje zapotrzebowanie kaloryczne oraz wybierając pulę produktów i dań z których będzie korzystał podczas użytkania aplikacji. 
                     <span>Dalej korzysta ze strony która składa się z 4 części: </span>
                     <div className="project-side__description--list" ref={list}>
                         <div className="project-side__list" ref={calendarRef} onClick={()=>activeElement(calendarRef.current,calednarImg)}>
